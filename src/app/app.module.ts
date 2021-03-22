@@ -14,19 +14,23 @@ import { HomeNoticiasComponent } from './home/home-noticias/home-noticias.compon
 import { HomeEventosComponent } from './home/home-eventos/home-eventos.component';
 import { HomeContactoComponent } from './home/home-contacto/home-contacto.component';
 import { HomeUbicacionComponent } from './home/home-ubicacion/home-ubicacion.component';
+import { HomeCarruselComponent } from './home/home-carrusel/home-carrusel.component';
+
+/*
 import { AdminComponent } from './admin/admin/admin.component';
 import { AdminNavbarComponent } from './admin/admin-navbar/admin-navbar.component';
 import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { AdminGaleriasComponent } from './admin/admin-galerias/admin-galerias.component';
-import { HomeCarruselComponent } from './home/home-carrusel/home-carrusel.component';
 import { AdminNoticiasComponent } from './admin/admin-noticias/admin-noticias.component';
 import { AdminEventosComponent } from './admin/admin-eventos/admin-eventos.component';
 import { AdminInformacionBasicaComponent } from './admin/admin-informacion-basica/admin-informacion-basica.component';
 import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
 import { AdminUsuariosComponent } from './admin/admin-usuarios/admin-usuarios.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+*/
+
 import { SecurityLoginComponent } from './security/security-login/security-login.component';
 import { SecurityNuevoComponent } from './security/security-nuevo/security-nuevo.component';
 import { SecurityRecuperarPassComponent } from './security/security-recuperar-pass/security-recuperar-pass.component';
@@ -57,19 +61,20 @@ import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.
     HomeEventosComponent,
     HomeContactoComponent,
     HomeUbicacionComponent,
+    HomeCarruselComponent,
+/*
     AdminComponent,
     AdminNavbarComponent,
     AdminHeaderComponent,
     AdminFooterComponent,
     AdminDashboardComponent,
     AdminGaleriasComponent,
-    HomeCarruselComponent,
     AdminNoticiasComponent,
     AdminEventosComponent,
     AdminInformacionBasicaComponent,
     AdminAboutComponent,
     AdminUsuariosComponent,
-    AdminLoginComponent,
+    AdminLoginComponent, */
     SecurityLoginComponent,
     SecurityNuevoComponent,
     SecurityRecuperarPassComponent,
