@@ -1,0 +1,42 @@
+ul {
+    margin: 0;
+    padding: 0;    
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;    
+}
+
+ li {
+    
+    padding: 0;
+    float:right;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 2px 20px  20px;
+    font-size: 15px;    
+    color:black
+        
+}
+
+.logo-gob {    
+    max-width: 10%;
+    margin: 20px 300px 8px 20px
+    
+}
+
+.fondo{
+    width: 920px;
+    font-family: Helvetica;
+    font-size: 12px;
+    margin: 0 auto;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}

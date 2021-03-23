@@ -1,0 +1,39 @@
+
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.logo {
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 10%;
+    margin-right: 10px;
+}
+
+.contenedor {
+    display: flex; 
+    flex-direction: row;    
+    font-family: Helvetica;
+    background-color: #eaeaea;
+    width: 920px;    
+    height: 300px;    
+    margin: 42vh auto 0;            
+    padding: 20px;
+}
+
+.columna {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.titulo{
+    margin-bottom: 40px;
+    color: gray;
+}
