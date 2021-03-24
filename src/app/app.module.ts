@@ -46,6 +46,8 @@ import { ForoHomeComponent } from './foros/foro-home/foro-home.component';
 import { ForoCategoriasComponent } from './foros/foro-categorias/foro-categorias.component';
 import { ForoPostsComponent } from './foros/foro-posts/foro-posts.component';
 import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.component';
+import { SecurityPerfilInformacionComponent } from './security/security-perfil-informacion/security-perfil-informacion.component';
+import { SecurityPerfilEditarComponent } from './security/security-perfil-editar/security-perfil-editar.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.
     ForoHomeComponent,
     ForoCategoriasComponent,
     ForoPostsComponent,
-    ForoPostNuevoComponent
+    ForoPostNuevoComponent,
+    SecurityPerfilInformacionComponent,
+    SecurityPerfilEditarComponent
   ],
   imports: [
     BrowserModule,
