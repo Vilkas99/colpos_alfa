@@ -46,6 +46,11 @@ import { ForoHomeComponent } from './foros/foro-home/foro-home.component';
 import { ForoCategoriasComponent } from './foros/foro-categorias/foro-categorias.component';
 import { ForoPostsComponent } from './foros/foro-posts/foro-posts.component';
 import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.component';
+import { CursosCategoriaComponent } from './cursos/cursos-categoria/cursos-categoria.component';
+import { CursosMostrarCategoriaComponent } from './cursos/cursos-mostrar-categoria/cursos-mostrar-categoria.component';
+import { CursosVideosComponent } from './cursos/cursos-videos/cursos-videos.component';
+import { CursosLecturasComponent } from './cursos/cursos-lecturas/cursos-lecturas.component';
+import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos-evaluaciones.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +94,12 @@ import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.
     ForoHomeComponent,
     ForoCategoriasComponent,
     ForoPostsComponent,
-    ForoPostNuevoComponent
+    ForoPostNuevoComponent,
+    CursosCategoriaComponent,
+    CursosMostrarCategoriaComponent,
+    CursosVideosComponent,
+    CursosLecturasComponent,
+    CursosEvaluacionesComponent
   ],
   imports: [
     BrowserModule,

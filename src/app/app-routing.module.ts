@@ -23,6 +23,11 @@ import { SecurityRecuperarPassComponent } from './security/security-recuperar-pa
 
 
 import { CursosAulaComponent } from './cursos/cursos-aula/cursos-aula.component';
+import { CursosCategoriaComponent } from './cursos/cursos-categoria/cursos-categoria.component';
+import { CursosMostrarCategoriaComponent } from './cursos/cursos-mostrar-categoria/cursos-mostrar-categoria.component';
+import { CursosVideosComponent } from './cursos/cursos-videos/cursos-videos.component';
+import { CursosLecturasComponent } from './cursos/cursos-lecturas/cursos-lecturas.component';
+import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos-evaluaciones.component';
 
 import { EcommerceCategoriasComponent } from './ecommerce/ecommerce-categorias/ecommerce-categorias.component';
 import { EcommerceProductosComponent } from './ecommerce/ecommerce-productos/ecommerce-productos.component';
@@ -34,7 +39,7 @@ const routes: Routes = [
     component: HomeGaleriaComponent
 
   },
- 
+
   {
     path:'carrusel',
     component: HomeCarruselComponent
@@ -68,6 +73,26 @@ const routes: Routes = [
     component:   CursosAulaComponent
   },
   {
+    path:'cursos/categorias',
+    component:   CursosCategoriaComponent
+  },
+  {
+    path:'cursos/categoria',
+    component:   CursosMostrarCategoriaComponent
+  },
+  {
+    path:'cursos/video',
+    component:   CursosVideosComponent
+  },
+  {
+    path:'cursos/lectura',
+    component:   CursosLecturasComponent
+  },
+  {
+    path:'cursos/evaluacion',
+    component:   CursosEvaluacionesComponent
+  },
+  {
     path:'ecommerce/categorias',
     component:   EcommerceCategoriasComponent
   },
@@ -95,13 +120,13 @@ const routes: Routes = [
     path:'foros/post-nuevo',
     component:   ForoPostNuevoComponent
   },
- 
+
   {
     path:'login',
     component:   SecurityLoginComponent
-  } 
+  }
   ,
- 
+
   {
     path:'login',
     component:   SecurityLoginComponent
