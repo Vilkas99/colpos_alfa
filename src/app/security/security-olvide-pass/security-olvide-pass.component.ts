@@ -6,19 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-olvide-pass.component.css']
 })
 export class SecurityOlvidePassComponent implements OnInit {
-
-  btnText: string = "Confirmar";
-  dirCorreo: string = "";
-  correo: string = "";
-
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  saveCorreo() {
-    this.correo = this.dirCorreo;
-  }
-
 }
