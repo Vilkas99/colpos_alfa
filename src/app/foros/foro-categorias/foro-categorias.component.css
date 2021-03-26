@@ -1,0 +1,50 @@
+#pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pagination > p{
+  font-weight: bold;
+}
+
+#sortSearch {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.subcategory {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-style: solid;
+  border-collapse: collapse;
+  margin-bottom: -1px;
+  border-width: 0.5px;
+  border-color: black;
+  width: 100%;
+  height: 120px;
+  flex-direction: row;
+}
+
+.subcategory  p{
+  display: flex;
+}
+
+.subcategoryLeft {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.titlePost {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.subcategoryRight {
+  display: flex;
+  align-items: center;
+}
