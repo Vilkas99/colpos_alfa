@@ -1,62 +1,75 @@
 <div id="post">
   
-    <div id="post-header">
-      
-      <h1 id="post-header-title"> Crear publicación </h1>
-      <div id="post-header-body"> 
-      
-        <h3 id="post-header-category"> Simulador | Educación financiero </h3>
-        <h4 id="post-header-user"> BryanGA </h4>
-        
-      </div>
+  <div id="post-header">
+    
+    <h1 id="post-header-title"> Crear publicación </h1>
+    <div id="post-header-body"> 
+    
+      <h3 id="post-header-category"> Simulador | Educación financiero </h3>
+      <h4 id="post-header-user"> BryanGA </h4>
       
     </div>
-  
-    <div id="post-main">
-      <div id="post-body">
-  
-        <div id="post-selection">
-  
-          <div id="post-selection-text" class="post-selection-post">
-            Publicación
-          </div>
-          <div id="post-selection-image" class="post-selection-post">
-            Imágenes y vídeos
-          </div>
-          <div id="post-selection-link" class="post-selection-post">
-            Links
-          </div>
-          <div id="post-selection-more" class="post-selection-post">
-            More
-          </div>
-  
+    
+  </div>
+
+  <div id="post-main">
+    <div id="post-body">
+
+      <div id="post-selection">
+
+        <div id="post-selection-text" class="post-selection-post">
+          Publicación
         </div>
-        <div id="post-input">
-  
-            <input type="text" id="post-input-title" name="fname"><br><br>
-            <div id="post-input-options">Optiones </div>
-            <input type="text" id="post-input-body" name="lname"><br><br>
-  
+        <div id="post-selection-image" class="post-selection-post">
+          Vídeo de Youtube
         </div>
-        <div id="post-submit">
-  
-            <button type="button" > Cancelar</button>
-            <button type="button" > Publicar</button>
-  
+        <div id="post-selection-link" class="post-selection-post">
+          Enlace
         </div>
-  
+
       </div>
-  
-      <div id="post-related">
-  
-        <div id="post-related-info">
-          Comunidad:
-            - Publicaciones
+      <form id="post-input">
+
+          <input type="text" id="post-input-title" name="fname" minlength="4" maxlength="30" ><br><br>
+          <div id="post-input-options">	
+             &#119821; &#119868;&#128279;
+          </div>
+          <textarea type="text" id="post-input-body" name="lname">
+          </textarea>
+
+      </form>
+      <div id="post-submit">
+
+          <button type="button" class="post-button"> Cancelar</button>
+          <button type="button" class="post-button"> Publicar</button>
+
+      </div>
+
+    </div>
+
+    <div id="post-related">
+
+      <div id="post-related-info">
+        <div class="post-related-title">
+            <h3> Antes de publicar, toma en cuenta lo siguiente: </h3>
+            <h4> Reglas </h4>
         </div>
-        <div id="post-related-more">
-          Nuevos cambios:
-            - 
-        </div>
+        <ol>
+          <li> No hacer spam </li>
+          <li> No publicar contenido inapropiado </li>
+          <li> No incitar al odio </li>
+          <li> No insultar </li>
+        </ol>
+      </div>
+      <div id="post-related-more">
+        <h4 class="other-categories">Otras categorías</h4>
+        <ul>
+          <li> Plantar semillas </li>
+          <li> Vender productos </li>
+          <li> Control de plagas </li>
+
+        </ul>
       </div>
     </div>
   </div>
+</div>

@@ -1,100 +1,134 @@
 #post {
-    background-color: #dadada;
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #dadada;
+  display: flex;
+  flex-direction: column;
+}
+
+#post-header {
+
+}
+
+#post-header-title {
+  text-align: center;
+}
+
+#post-header-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#post-header-category {
   
-  #post-header {
+}
+
+#post-header-user {
   
-  }
-  
-  #post-header-title {
-    text-align: center;
-  }
-  
-  #post-header-body {
-    display: flex;
+}
+
+#post-main {
+  display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  #post-header-category {
-    
-  }
-  
-  #post-header-user {
-    
-  }
-  
-  #post-main {
-    display:flex;
-      flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  #post-body {
-    width: 75%;
-    background-color: white;
-  }
-  
-  #post-selection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 0px 20px 0px;
-  }
-  
-  .post-selection-post {
-    font-size: 18px;
-  }
-  
-  #post-selection-text {
-  }
-  
-  #post-selection-image {  
-  }
-  
-  #post-selection-link {
-  }
-  
-  #post-selection-more {
-  }
-  
-  #post-input {
-    align-items: center;
-  }
-  
-  #post-input-title {
-    padding: 10px 400px 10px 400px;
-  }
-  
-  #post-input-options {
-  
-  }
-  
-  #post-input-body {
-    padding: 100px 400px 100px 400px;
-  }
-  
-  #post-submit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  #post-related {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  #post-related-info {
-    background-color: white;
-    width: 300px;
-  }
-  
-  #post-related-more {
-    background-color: white;
-    width: 300px;
-  }
+  justify-content: space-evenly;
+}
+
+#post-body {
+  width: 75%;
+  background-color: white;
+}
+
+#post-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.post-selection-post {
+  font-size: 18px;
+}
+
+#post-selection-text {
+}
+
+#post-selection-image {  
+}
+
+#post-selection-link {
+}
+
+#post-selection-more {
+}
+
+#post-input {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#post-input-title {
+  height: 30px;
+  width: 95%;
+}
+
+#post-input-options {
+
+}
+
+#post-input-body {
+  width: 95%;
+  height: 200px;
+  box-sizing: border-box;
+    resize: none;
+}
+
+#post-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#post-related {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+#post-related-info {
+  background-color: white;
+  height: 250px;
+}
+
+.post-related-title {
+  margin: 15px;
+}
+
+#post-related-more {
+  background-color: white;
+  height: 100px;
+}
+
+.other-categories {
+  margin: 10px;
+}
+
+.post-button {
+          display: inline-block;
+        background-color: #dadada;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 200px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+}

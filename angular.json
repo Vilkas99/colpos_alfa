@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "colpos"
+    }
+  },
+  "defaultProject": "colpos",
+  "cli": {
+    "analytics": "732f0f80-c09a-43ad-9648-6daf835a970c"
+  }
 }
