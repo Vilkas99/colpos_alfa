@@ -6,81 +6,162 @@
   range slider
 */
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 *{
   cursor: url('cursor.cur'), default;
 }
 
+::selection {
+  color: white;
+  background: black;
+}
 
 /*
-  Imagen portada
+  Portada
 */
 
 .portada{
-    width: 925px;
-    height: 500px;
-    margin: 20px auto 120px auto;
-    border-radius: 10px 10px 0 0;
-    background-color: black;
-    border-bottom: 60px #FF9900 solid;
-    background-image: url('https://www.hogarmania.com/archivos/201708/animales-granja-ovejas-1280x720x80xX.jpg');
-    background-size: cover;
-    background-position: center;
+  width: 925px;
+  height: 350px;
+  margin: 80px auto 40px auto;
 }
 
-.portada section{
-  position: relative;
-  color: #D7F5FE;
-  left: 30px;
-  top: 100px;
-  text-align: center;
-}
-.portada section .texto{
-  font-size: 30px;
+.portada section {
+  width: 550px;
+  height: 350px;
 }
 
-.portada section .titulo{
-  font-size: 60px;
-  line-height: 15pt;
-}
-
-.portada .botones {
+svg {
     position: relative;
-    left: 160px;
-    top: 310px;
+    font: 15.5em 'Montserrat';
+    top: 0;
+    left: 0;
     width: 600px;
-    height: 120px;
-    background: #A66300;
-    border: 4px white solid;
-    border-radius: 10px;
+    height: 100px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 10px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #010B13;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #A4133A;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #C56907;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #685D6F;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #9A2CA0;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+.portada section .texto{
+  font-size: 22px;
+  text-align: justify;
+  color: #4D526A;
+  transition: 1s;
+}
+
+.portada .botones{
+    width: 500px;
+    position: relative;
+    left: 0px;
+    top: -120px;
 }
 
 .portada .botones .boton{
+  width: 200px;
   height: 60px;
-  width: 180px;
-  margin: 20px 55px;
-  border: 0px #010B13 solid;
+  margin-left: 50px;
+  background-color: #33B357;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  font-size: 22px;
-  font-weight: 500;
+  border: 0;
+  color: #EFF6EE;
+  font-size: 23px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  transition: 1s;
 }
 
-.portada .botones .categorias{
-  background-color: #ECE4B7;
+.portada .botones .boton:hover{
+  background-color: #040E26;
+  color: #33B357;
+  cursor: url('cursorHWT.cur'), pointer;
 }
 
-.portada .botones .todos{
-  background-color: #ECE4B7;
+.portada .botones .categorias:hover{transform: scale(1.3) rotate(2deg);}
+.portada .botones .todos:hover{transform: scale(1.3) rotate(-4deg);}
+
+.portada .botones .boton:focus{
+  border-radius: 0px;
+  color: white;
+  background-color: black;
+}
+
+.portada .imagen{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  left: 550px;
+  top: -450px;
+  z-index: -1;
+  background-color: white;
+  background-image: url('https://media1.giphy.com/media/kEoVIQKtE7YB5KQqB3/giphy.gif');
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.portada:hover svg{
+  transform: rotate(-2deg)
+    scale(1.05);
+}
+
+.portada:hover .texto{
+  transform: translate(5px, 0);
+}
+
+
+.portada:hover .imagen{
+  transform: rotate(4deg)
+    scale(1.05);
 }
 
 /*
-  Recuadro "El gran desafio" y animaciones
+  Recuadros con animaciones
 */
 
 .cuadro{
   width: 925px;
   height: 240px;
-  margin: 80px auto;
+  margin: 80px auto 180px auto;
   border: 2px #084887 solid;
   border-radius: 20px;
   transition: 2s;
@@ -100,7 +181,25 @@
   transition: 3s;
 }
 
-.cuadro .imagen .filtro{
+.cuadro .imagen2{
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url('https://www.cursosycarreras.com.mx/orientacion/wp-content/uploads/2019/05/Carrera-de-veterinaria-1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -30px;
+  left: 570px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: 3s;
+}
+
+
+.cuadro .imagen .filtro,
+.cuadro .imagen2 .filtro{
   width: 100%;
   height: 100%;
   background-color: rgba(5, 53, 97, 0.3);
@@ -119,22 +218,39 @@
   text-align: justify;
 }
 
-.cuadro .informacion h3{
+.cuadro .informacion2{
+  position: relative;
+  left: 40px;
+  top: -300px;
+  width: 500px;
+  height: 200px;
+  font-size: 1.3em;
+  color: #111814;
+  text-align: justify;
+}
+
+.cuadro .informacion h3,
+.cuadro .informacion2 h3{
   font-weight: 600;
-  margin: 20px auto 10px 150px;
+  margin: 20px auto 10px 135px;
   font-family: helvetica;
 }
 
-.cuadro .informacion .resalte1{
-  color: #F79226;
-  font-weight: 600;
+.cuadro .informacion h3:hover,
+.cuadro .informacion2 h3:hover{
+  text-decoration: underline;
 }
 
-.cuadro .informacion .resalte{font-weight: 600;}
+.cuadro .informacion .resalte,
+.cuadro .informacion2 .resalte{font-weight: 600;}
 .cuadro .informacion .n1{color: #51B927;}
 .cuadro .informacion .n2{color: #EC7E09;}
 .cuadro .informacion .n3{color: #DA2F46;}
-.cuadro .informacion .resalte:hover{
+.cuadro .informacion2 .n1{color: #51B927;}
+.cuadro .informacion2 .n2{color: #EC7E09;}
+.cuadro .informacion2 .n3{color: #DA2F46;}
+.cuadro .informacion .resalte:hover,
+.cuadro .informacion2 .resalte:hover{
   outline: 2px solid;
   outline-offset: 2px;
 }
@@ -149,33 +265,187 @@
   left: 150px;
   top: 0;
   border-radius: 30px;
+  transition: 3s transform;
 }
 
-.cuadro .informacion .boton:hover{
+.cuadro .informacion2 .boton{
+  position: relative;
+  font-weight: 500;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border: 2px #084887 solid;
+  left: 50px;
+  top: 0;
+  border-radius: 30px;
+  transition: 3s transform;
+}
+
+.cuadro .informacion .boton:hover,
+.cuadro .informacion2 .boton:hover{
   border: 2px #010B13 solid;
   background-color: #010B13;
   color: #F7F5FB;
   cursor: url('cursorHWT.cur'), pointer;
 }
 
-.cuadro .informacion .boton:focus{
+.cuadro .informacion .boton:focus,
+.cuadro .informacion2 .boton:focus{
   border: 2px #010B13 solid;
   background-color: #010B13;
   color: #F7F5FB;
   border-radius: 0;
 }
 
-.cuadro .imagen:hover{
-  transform: scale(1.05, 1.05) rotate(-2deg);
-}
-
-.cuadro:hover .imagen{
+.cuadro:hover .imagen,
+.cuadro:hover .imagen2{
   transform: scale(1.05, 1.05)
     rotate(-6deg)
     translate(10px, 10px);
 }
 
+.cuadro:hover .informacion .boton,
+.cuadro:hover .informacion2 .boton{
+  transform: scale(1.05, 1.05)
+    translate(-20px, 10px);
+}
+
 .cuadro:hover{
-  transform: translate(-3px, -5px);
+  transform: translate(-5px, -15px);
   transform-origin: 100% 0;
 }
+
+
+
+/*
+  Imagenes cursos recomendados
+*/
+
+.recomendaciones{
+  width: 925px;
+  height: 1200px;
+  margin: auto;
+}
+
+.recomendaciones .texto{
+  width: 700px;
+  margin: 0 auto 100px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+}
+
+.recomendaciones .imagenes{
+  width: 100%;
+  height: 100%;
+}
+
+.recomendaciones .titulo{
+  position: relative;
+  display: none;
+  width: 50%;
+  left: 25%;
+  top: 20%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.recomendaciones .descripcion{
+  position: relative;
+  display: none;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  outline: 2px;
+  color: white;
+  background-color: black;
+}
+
+.recomendaciones .marco{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  top: -10%;
+  border: 3px solid;
+  border-radius: 10px;
+}
+
+.recomendaciones .imagen{
+  border-radius: 10px;
+}
+
+.recomendaciones .n1{
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://www.elagoradiario.com/wp-content/uploads/2020/09/agricultura-mascarilla.jpg');
+  color: #071E22;
+  transition: 1s;
+}
+
+.recomendaciones .n2{
+  position: relative;
+  left: 450px;
+  top: -200px;
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.ytimg.com/vi/XT1EERtE7Uk/maxresdefault.jpg');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .n3{
+  position: relative;
+  left: 10px;
+  top: -280px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: left center;
+  background-size: cover;
+  background-image: url('https://hannainst.com.mx/wp-content/uploads/boletin-HI801-agricultura.jpg');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .n4{
+  position: relative;
+  left: 420px;
+  top: -410px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://lh3.googleusercontent.com/proxy/BGScHLW8i5kmIehuFrKPr6HU93p8U76L98VJ5M-XR5bt0Y6LO8Ts7te-7d_6N97hcICczBVQ4uj7mxna6LepiDk1_g5vArT8KR9x5yhTtVWhT6Vf1J9WTU3GsVBpBUr1LrLAJg');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .imagen:hover{
+  transform: scale(1.1);
+  cursor: url('cursorHWT.cur'), pointer;
+  z-index: 100;
+}
+
+.recomendaciones .imagen:hover .titulo{display: block;}
+.recomendaciones .imagen:hover .descripcion{display: block;}
+.recomendaciones .imagen:hover .marco{display: none;}
