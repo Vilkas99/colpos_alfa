@@ -9,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 *{
-  cursor: url('cursor.cur'), default;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fcursor.cur?alt=media&token=9c1264a0-613f-4f0e-a467-9be0f0ed6516'), default;
 }
 
 ::selection {
@@ -113,7 +113,7 @@ svg {
 .portada .botones .boton:hover{
   background-color: #040E26;
   color: #33B357;
-  cursor: url('cursorHWT.cur'), pointer;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
 }
 
 .portada .botones .categorias:hover{transform: scale(1.3) rotate(2deg);}
@@ -133,7 +133,7 @@ svg {
   top: -450px;
   z-index: -1;
   background-color: white;
-  background-image: url('https://media1.giphy.com/media/kEoVIQKtE7YB5KQqB3/giphy.gif');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fplanta.webp?alt=media&token=40d4d4fc-c8ac-490e-bbce-ddf91436a7f8');
   background-position: center;
   background-size: cover;
   transition: 1s;
@@ -172,7 +172,7 @@ svg {
   height: 300px;
   box-sizing: border-box;
   background-color: black;
-  background-image: url('https://gestion.pe/resizer/jX0lkmsabY8UbA9rhqZB3qtHHgA=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/E5OYV3YNBNHM3D5L67JZW5RN7Q.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome1.jpg?alt=media&token=2631ea4a-c430-42bb-81b1-66fe96e77f6c');
   background-size: cover;
   background-position: center;
   margin: -30px 50px;
@@ -186,7 +186,7 @@ svg {
   height: 300px;
   box-sizing: border-box;
   background-color: black;
-  background-image: url('https://www.cursosycarreras.com.mx/orientacion/wp-content/uploads/2019/05/Carrera-de-veterinaria-1.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome2.jpg?alt=media&token=6943b372-ed60-431e-8a1b-299b0e1856e0');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -286,7 +286,7 @@ svg {
   border: 2px #010B13 solid;
   background-color: #010B13;
   color: #F7F5FB;
-  cursor: url('cursorHWT.cur'), pointer;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
 }
 
 .cuadro .informacion .boton:focus,
@@ -336,7 +336,28 @@ svg {
   letter-spacing: 1px;
   word-spacing: 4px;
   text-align: center;
+  color: #5D6C6F;
 }
+
+.recomendaciones .texto .seccionT{
+  display: block;
+  font-size: 1.9em;
+  line-height: 2.2;
+	font-family: 'Georgia';
+  color: #262322;
+  transition: 0.3s;
+}
+.recomendaciones .texto .seccionT:hover{transform: scale(1.02);}
+
+.recomendaciones .texto .resaltado{font-weight: 700;}
+.recomendaciones .texto .resaltado:hover{
+  outline: 3px solid;
+  outline-offset: 2px;
+}
+
+.recomendaciones .texto .t1{color: #E1BC29;}
+.recomendaciones .texto .t2{color: #FF8C42;}
+.recomendaciones .texto .t3{color: #61A0AF;}
 
 .recomendaciones .imagenes{
   width: 100%;
@@ -349,11 +370,11 @@ svg {
   width: 50%;
   left: 25%;
   top: 20%;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .recomendaciones .descripcion{
@@ -362,12 +383,12 @@ svg {
   width: 50%;
   left: 25%;
   top: 25%;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   outline: 2px;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .recomendaciones .marco{
@@ -393,7 +414,7 @@ svg {
   background-color: green;
   background-position: center;
   background-size: cover;
-  background-image: url('https://www.elagoradiario.com/wp-content/uploads/2020/09/agricultura-mascarilla.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome3.jpg?alt=media&token=fe2cf255-8074-42fb-ad3d-3eb7d93aee75');
   color: #071E22;
   transition: 1s;
 }
@@ -401,13 +422,13 @@ svg {
 .recomendaciones .n2{
   position: relative;
   left: 450px;
-  top: -200px;
-  width: 400px;
+  top: -160px;
+  width: 460px;
   height: 400px;
   background-color: green;
   background-position: center;
   background-size: cover;
-  background-image: url('https://i.ytimg.com/vi/XT1EERtE7Uk/maxresdefault.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome4.jpg?alt=media&token=c44c6179-fc97-40b2-88ff-510d9dbe78f8');
   color: #071E22;
   transition: 0.6s;
 }
@@ -419,9 +440,9 @@ svg {
   width: 500px;
   height: 400px;
   background-color: green;
-  background-position: left center;
+  background-position: center;
   background-size: cover;
-  background-image: url('https://hannainst.com.mx/wp-content/uploads/boletin-HI801-agricultura.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FHuerto.jpg?alt=media&token=40c670e8-7f05-4f5b-8506-7f258796f773');
   color: #071E22;
   transition: 0.6s;
 }
@@ -435,14 +456,14 @@ svg {
   background-color: green;
   background-position: center;
   background-size: cover;
-  background-image: url('https://lh3.googleusercontent.com/proxy/BGScHLW8i5kmIehuFrKPr6HU93p8U76L98VJ5M-XR5bt0Y6LO8Ts7te-7d_6N97hcICczBVQ4uj7mxna6LepiDk1_g5vArT8KR9x5yhTtVWhT6Vf1J9WTU3GsVBpBUr1LrLAJg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome5.jpg?alt=media&token=67f98888-11fd-417b-a69b-ca2cabd41a9a');
   color: #071E22;
   transition: 0.6s;
 }
 
 .recomendaciones .imagen:hover{
   transform: scale(1.1);
-  cursor: url('cursorHWT.cur'), pointer;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
   z-index: 100;
 }
 
