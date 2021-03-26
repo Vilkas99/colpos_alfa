@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "colpos"
+    }
+  },
+  "defaultProject": "colpos",
+  "cli": {
+    "analytics": false
+  }
 }
