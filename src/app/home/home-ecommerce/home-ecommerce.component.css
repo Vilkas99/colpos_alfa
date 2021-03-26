@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.3rem;
+    
+}
+
+/*Container Header (Busqueda y menús)*/
+.header {
+    border: 0.0.1rem solid black;
+    display: flex;
+    width:auto;
+    background-color: #eaeaea
+}
+
+.header-container-search {
+    flex-grow: 1;
+}
+#header-container-search-input {
+    width: 80%;
+}
+.header-container-icons {
+    width: 20%;
+    display: flex;
+}
+#header-container-icons-ul{
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+.titulo{
+    font-size: 2rem;
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+}
+#img1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
