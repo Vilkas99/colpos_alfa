@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosVideosComponent implements OnInit {
 
+  show_acerca=true;
+
   constructor() { }
 
   ngOnInit(): void {
