@@ -1,4 +1,47 @@
-<p>foro-categorias works!</p>
+<p>Simulador | Educación Financiera</p>
 
-<a routerLink="/foros/post-nuevo"> crear post-nuevo </a> 
+<div id="pagination">
+  <p> 1 2 3 4 5 SIGUIENTE >></p>
+  <p>Página 1 de 10 </p>
+</div>
+
+<button routerLink="/foros/post-nuevo"> Crear Post</button>
+
+<div id="sortSearch">
+  <input type="text" name="" value="">
+  <select name="list">
+    <option disabled selected>Ordenar</option>
+    <option value="value1">Value 1</option>
+    <option value="value2">Value 2</option>
+    <option value="value3">Value 3</option>
+  </select>
+</div>
+
+<p> </p>
+<div class="subcategory">
+  <div class="subcategoryLeft">
+    <p> <a routerLink="/foros/posts" class="titlePost">¿Cómo plantar papas?</a></p>
+    <p>Publicado por Uzielito el 19/02/2015</p>
+  </div>
+  <div class="subcategoryRight">
+    <p>5 respuestas</p>
+  </div>
+</div>
+
+<div  class="subcategory">
+  <div class="subcategoryLeft">
+    <p class="titlePost"><a routerLink="/foros/posts">¿Cómo hacer la simulación en Angular?</a></p>
+    <p>Publicado por Uzielito el 19/02/2015</p>
+  </div>
+  <div class="subcategoryRight">
+    <p>5 respuestas</p>
+  </div>
+</div>
+
+
+
+
+<!--
+<a routerLink="/foros/post-nuevo"> crear post-nuevo </a>
 <a routerLink="/foros/posts"> ver foro-posts </a>
+--->
