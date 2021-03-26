@@ -1,0 +1,32 @@
+* {
+    box-sizing:border-box;
+}
+
+/* div{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    width: 80%;
+} */
+
+.container {
+    background-color: gray;
+    padding: 20px 30px 40px;
+    width: 70%;
+ 
+  }
+  
+ 
+  .container_image {
+    width: 300px;
+    margin: 32px 30px 20px 0;
+    float: left;
+  }
+  .container_text {
+    margin: 10px;
+    display: inline;
+  }
+
+  
