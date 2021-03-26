@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecurityRecuperarPassComponent implements OnInit {
 
-  btnText: string = "Confirmar";
-
   constructor() { }
 
   ngOnInit(): void {
