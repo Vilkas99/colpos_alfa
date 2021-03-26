@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecurityOlvidePassComponent implements OnInit {
 
+  btnText: string = "Confirmar";
+  dirCorreo: string = "";
+  correo: string = "";
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  saveCorreo() {
+    this.correo = this.dirCorreo;
   }
 
 }
