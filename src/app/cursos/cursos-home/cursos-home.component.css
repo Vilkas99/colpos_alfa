@@ -1,0 +1,181 @@
+/*
+  Posibles materiales:
+  @import url('https://fonts.googleapis.com/css?family=Raleway')
+  https://www.hogarmania.com/archivos/201708/animales-granja-ovejas-1280x720x80xX.jpg
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+  range slider
+*/
+
+*{
+  cursor: url('cursor.cur'), default;
+}
+
+
+/*
+  Imagen portada
+*/
+
+.portada{
+    width: 925px;
+    height: 500px;
+    margin: 20px auto 120px auto;
+    border-radius: 10px 10px 0 0;
+    background-color: black;
+    border-bottom: 60px #FF9900 solid;
+    background-image: url('https://www.hogarmania.com/archivos/201708/animales-granja-ovejas-1280x720x80xX.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portada section{
+  position: relative;
+  color: #D7F5FE;
+  left: 30px;
+  top: 100px;
+  text-align: center;
+}
+.portada section .texto{
+  font-size: 30px;
+}
+
+.portada section .titulo{
+  font-size: 60px;
+  line-height: 15pt;
+}
+
+.portada .botones {
+    position: relative;
+    left: 160px;
+    top: 310px;
+    width: 600px;
+    height: 120px;
+    background: #A66300;
+    border: 4px white solid;
+    border-radius: 10px;
+}
+
+.portada .botones .boton{
+  height: 60px;
+  width: 180px;
+  margin: 20px 55px;
+  border: 0px #010B13 solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.portada .botones .categorias{
+  background-color: #ECE4B7;
+}
+
+.portada .botones .todos{
+  background-color: #ECE4B7;
+}
+
+/*
+  Recuadro "El gran desafio" y animaciones
+*/
+
+.cuadro{
+  width: 925px;
+  height: 240px;
+  margin: 80px auto;
+  border: 2px #084887 solid;
+  border-radius: 20px;
+  transition: 2s;
+}
+
+.cuadro .imagen{
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url('https://gestion.pe/resizer/jX0lkmsabY8UbA9rhqZB3qtHHgA=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/E5OYV3YNBNHM3D5L67JZW5RN7Q.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: -30px 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: 3s;
+}
+
+.cuadro .imagen .filtro{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 53, 97, 0.3);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.cuadro .informacion{
+  position: relative;
+  left: 400px;
+  top: -240px;
+  width: 500px;
+  height: 200px;
+  font-size: 1.3em;
+  color: #111814;
+  text-align: justify;
+}
+
+.cuadro .informacion h3{
+  font-weight: 600;
+  margin: 20px auto 10px 150px;
+  font-family: helvetica;
+}
+
+.cuadro .informacion .resalte1{
+  color: #F79226;
+  font-weight: 600;
+}
+
+.cuadro .informacion .resalte{font-weight: 600;}
+.cuadro .informacion .n1{color: #51B927;}
+.cuadro .informacion .n2{color: #EC7E09;}
+.cuadro .informacion .n3{color: #DA2F46;}
+.cuadro .informacion .resalte:hover{
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+.cuadro .informacion .boton{
+  position: relative;
+  font-weight: 500;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border: 2px #084887 solid;
+  left: 150px;
+  top: 0;
+  border-radius: 30px;
+}
+
+.cuadro .informacion .boton:hover{
+  border: 2px #010B13 solid;
+  background-color: #010B13;
+  color: #F7F5FB;
+  cursor: url('cursorHWT.cur'), pointer;
+}
+
+.cuadro .informacion .boton:focus{
+  border: 2px #010B13 solid;
+  background-color: #010B13;
+  color: #F7F5FB;
+  border-radius: 0;
+}
+
+.cuadro .imagen:hover{
+  transform: scale(1.05, 1.05) rotate(-2deg);
+}
+
+.cuadro:hover .imagen{
+  transform: scale(1.05, 1.05)
+    rotate(-6deg)
+    translate(10px, 10px);
+}
+
+.cuadro:hover{
+  transform: translate(-3px, -5px);
+  transform-origin: 100% 0;
+}
