@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;700;800&family=Montserrat:wght@400;700&display=swap');
+
+/* 
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+.navbar {
+    height: 15vh;
+    /* max-height: 200px; */
+    width: 100%;
+    background: #003052;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar .navbar__up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 2vmax;
+    z-index: 1;
+}
+
+.navbar .navbar__up .contenedor__btn__return {
+    text-decoration: none;
+    width: 10vmax;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar__up .btn__return {
+    height: 50px;
+    width: 80%;
+    background: #4574B6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+
+}
+
+.navbar .navbar__up .btn__return i {
+    color: #fff;
+    
+
+}
+.navbar .navbar__up .btn__return p {
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1vmax;
+    
+    
+}
+
+.navbar .navbar__up .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .navbar .navbar__up .menu a::after {
+    color: #fff;
+    content: normal;
+} */
+
+.navbar .navbar__up .menu a {
+    text-decoration: none;
+}
+
+
+
+.navbar .navbar__up .menu ul li {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1vmax;
+    color: #fff;
+    display:inline;
+    margin-right: 15px;
+
+}
+
+.navbar .navbar__down {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 2vmax;
+    z-index: 5;
+}
+
+.navbar .navbar__down .searchbar__navbar {
+    width: 50%;
+    height: 80%;
+    justify-self: center;
+    
+    margin-right: 11%;
+    z-index: 5;
+}
+
+
+
+
+.navbar .navbar__down .searchbar__navbar input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1vmax;
+    padding: 5px;
+}
+
+
+/* funcion de mostrar/ quitar lupa */
+.navbar .navbar__down .searchbar__navbar i {
+    position: absolute;
+    transform: translate(-46vmax,1vmax);
+    display: none;
+}
+
+
+.navbar .navbar__down .btn_cart__navbar {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar__down .btn_cart__navbar .btn__cart {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+
+
+.navbar .navbar__down .btn_cart__navbar .btn__cart .text_logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F9DC5C;
+    height: 100%;
+    width: auto;
+    min-width: 75%;
+    max-width: 80%;
+    border-radius: 8px 0 0 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vmax;
+    border: 1px solid #000;
+
+}
+
+.navbar .navbar__down .btn_cart__navbar .btn__cart .text_logo i {
+    color: #8E9AA4;
+}
+
+
+.navbar .navbar__down .btn_cart__navbar .btn__cart .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFD102;
+    height: 100%;
+    width: auto;
+    min-width: 20%;
+    border-radius: 0 8px 8px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vmax;
+    padding: 0 5px 0 5px;
+    border: 1px solid #000;
+}
+
+/* .navbar .navbar__down .searchbar__navbar i.remove {
+    display: none;
+} */
+
+
+
+
+.all {
+    height: 100vh;
+    /* height: auto; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.all .izq {
+    width: 25%;
+    height: 100%;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    z-index: 999;
+    
+}
+/* 
+list-style-type: none;
+*/
+
+.all .izq .menu_categorias {
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    -webkit-box-shadow: 43px 10px 98px -32px rgba(0,0,0,0.75);
+    -moz-box-shadow: 43px 10px 98px -32px rgba(0,0,0,0.75);
+    box-shadow: 43px 10px 98px -32px rgba(0,0,0,0.75);
+    padding: 30px;
+    position: relative;
+    border-radius: 8px;
+ }
+
+
+ .all .izq .menu_categorias h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    text-align: center;
+    
+
+ }  
+
+
+ .all .izq .menu_categorias ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1vmax;
+    
+}
+
+.all .izq .menu_categorias ul li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2vmax;
+    cursor: pointer;
+    display: block;
+}
+
+.all .izq .menu_categorias ul li:hover {
+    color: #003052;
+}
+
+ .all .izq .menu_categorias .second_layer_list {
+     font-size: 0.9vmax;
+     margin-left: .5vmax;
+     color: #878787;
+     cursor: pointer;
+ }
+
+ .all .izq .menu_categorias .second_layer_list li:hover {
+    
+    color: #003052;
+}
+
+
+
+.all .izq .panel_filtros {
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    -webkit-box-shadow: 17px 22px 98px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 22px 98px -8px rgba(0,0,0,0.75);
+    box-shadow: 17px 22px 98px -8px rgba(0,0,0,0.75);
+    padding: 15px;
+    z-index: 999;
+    border-radius: 8px;
+    
+ }
+
+
+ .all .izq .panel_filtros h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    text-align: center;
+ }
+
+
+ .all .izq .panel_filtros .contenedor__tools {
+     width: 100%;
+     height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+
+
+.all .der {
+    width: 75%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.all .der .der_up{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 75px 0 0px;
+}
+
+.all .der .der_up .pages{ 
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.all .der .der_down {
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.all .der .der_down  .contenedor__tarjetas {
+    height: 45%;
+    max-height: 25vmax;
+    width: 15vmax;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    -webkit-box-shadow: 41px 51px 80px -42px rgba(0,0,0,0.75);
+    -moz-box-shadow: 41px 51px 80px -42px rgba(0,0,0,0.75);
+    box-shadow: 41px 51px 80px -42px rgba(0,0,0,0.75);
+    border-radius: 8px;
+  
+}
+
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__img {
+    height: 50%;
+    width: 100%;
+    
+}
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__img .img {
+    height: 100%;
+    width: 100%;
+    background: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/ecommerce%2Fmarkus-spiske-vrbZVyX2k4I-unsplash.jpg?alt=media&token=4e978733-c1d7-4625-b105-56d2bec8f6db');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__detalles {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__detalles .nombre__art {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__detalles .precio__art {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vmax;
+    color: #3185FC;
+}
+
+.all .der .der_down  .contenedor__tarjetas .contenedor__detalles #btn__prod {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    background: #F9DC5C;
+}
