@@ -1,0 +1,61 @@
+#post {
+}
+
+#post-header {
+  flex-direction: row;
+}
+
+#post-title {
+  text-align: left;
+}
+
+#post-subtitle {
+  text-align: left;
+}
+
+#post-main {
+  padding: 50px 400px 50px 50px;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#post-author {
+  display: flex;
+  flex-direction: row;
+}
+
+#post-author-details {
+}
+
+#post-author-name {
+}
+
+#post-author-position {
+}
+
+#post-author-location {
+}
+
+#post-body {
+  border: 3px solid gray;
+  margin: 0px 0px 0px 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#post-footer {
+  display: flex;
+  flex-direction: row;
+}
+#post-interact {
+  display: flex;
+  flex-direction: row;
+}
+#post-time-rel {
+  display: flex;
+  flex-direction: row;
+} 
+
