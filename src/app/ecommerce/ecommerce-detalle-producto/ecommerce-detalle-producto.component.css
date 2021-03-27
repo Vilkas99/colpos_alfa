@@ -1,0 +1,139 @@
+
+
+
+textarea {
+    width: 30vw;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+button{
+    border: none; 
+    text-decoration: none;
+}
+
+textarea {
+    height: 120px;
+    margin-bottom: 80px;
+    resize: none;
+    padding: 10px;
+}
+
+
+.canvas { 
+    display: grid;
+    height: 70vh;
+    width: 98vw;    
+
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "titulo titulo"
+                         "imagenes info";
+}
+
+.titulo { 
+    
+    grid-area: titulo;
+}
+
+.icono {
+    content: url("../../../assets/images/wa.png");
+    width: 2%;
+    left: 430px;
+    bottom: 190px;
+    position: absolute;
+    
+}
+
+.imagenes {
+    border-radius: 50px;
+    -webkit-box-shadow: 1px 12px 28px 5px rgba(0,0,0,0.24); 
+box-shadow: 1px 12px 28px 5px rgba(0,0,0,0.24);
+    display: grid;    
+    justify-content: center;    
+    grid-area: imagenes;
+    grid-column-gap: 25px;
+    padding: 40px;
+    margin-left: 100px;
+    width: 45vw;
+    
+    grid-template-columns: 1fr , 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: "img1  img2"
+                         "img3  img4"
+                         "boton boton";
+}
+
+.img1 { 
+    grid-area: img1;
+}
+
+.img2 { 
+    grid-area: img2;
+}
+
+.img3 { 
+    grid-area: img3;
+}
+
+.img4 { 
+    grid-area: img4;
+}
+
+
+.ws{
+    grid-area: boton;
+    width: 170px;
+    height: 30px;
+    
+    margin: auto;
+    border-radius: 20px;    
+    background-color:#29B200;
+    color: white;
+    
+    
+}
+
+
+.info {     
+    padding-top: 90px;
+    grid-area: info;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo {
+    margin-bottom: 20px;
+    max-width: 570px;
+}
+
+.categorias {
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+.categoria {
+    margin-right: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.solid {
+    border-top: 2px solid black;
+    
+  }
