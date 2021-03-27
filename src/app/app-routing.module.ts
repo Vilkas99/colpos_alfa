@@ -31,7 +31,7 @@ import { EcommerceDetalleProductoComponent } from './ecommerce/ecommerce-detalle
 const routes: Routes = [
   {
     path:'',
-    component: HomeGaleriaComponent
+    component: HomeCarruselComponent
 
   },
  
