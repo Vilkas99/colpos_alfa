@@ -1,0 +1,472 @@
+/*
+  Posibles materiales:
+  @import url('https://fonts.googleapis.com/css?family=Raleway')
+  https://www.hogarmania.com/archivos/201708/animales-granja-ovejas-1280x720x80xX.jpg
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+  range slider
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fcursor.cur?alt=media&token=9c1264a0-613f-4f0e-a467-9be0f0ed6516'), default;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+/*
+  Portada
+*/
+
+.portada{
+  width: 925px;
+  height: 350px;
+  margin: 80px auto 40px auto;
+}
+
+.portada section {
+  width: 550px;
+  height: 350px;
+}
+
+svg {
+    position: relative;
+    font: 15.5em 'Montserrat';
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 10px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #010B13;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #A4133A;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #C56907;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #685D6F;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #9A2CA0;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+.portada section .texto{
+  font-size: 22px;
+  text-align: justify;
+  color: #4D526A;
+  transition: 1s;
+}
+
+.portada .botones{
+    width: 500px;
+    position: relative;
+    left: 0px;
+    top: -120px;
+}
+
+.portada .botones .boton{
+  width: 200px;
+  height: 60px;
+  margin-left: 50px;
+  background-color: #33B357;
+  border-radius: 10px;
+  border: 0;
+  color: #EFF6EE;
+  font-size: 23px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  transition: 1s;
+}
+
+.portada .botones .boton:hover{
+  background-color: #040E26;
+  color: #33B357;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
+}
+
+.portada .botones .categorias:hover{transform: scale(1.3) rotate(2deg);}
+.portada .botones .todos:hover{transform: scale(1.3) rotate(-4deg);}
+
+.portada .botones .boton:focus{
+  border-radius: 0px;
+  color: white;
+  background-color: black;
+}
+
+.portada .imagen{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  left: 550px;
+  top: -450px;
+  z-index: -1;
+  background-color: white;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fplanta.webp?alt=media&token=40d4d4fc-c8ac-490e-bbce-ddf91436a7f8');
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.portada:hover svg{
+  transform: rotate(-2deg)
+    scale(1.05);
+}
+
+.portada:hover .texto{
+  transform: translate(5px, 0);
+}
+
+
+.portada:hover .imagen{
+  transform: rotate(4deg)
+    scale(1.05);
+}
+
+/*
+  Recuadros con animaciones
+*/
+
+.cuadro{
+  width: 925px;
+  height: 240px;
+  margin: 80px auto 180px auto;
+  border: 2px #084887 solid;
+  border-radius: 20px;
+  transition: 2s;
+}
+
+.cuadro .imagen{
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome1.jpg?alt=media&token=2631ea4a-c430-42bb-81b1-66fe96e77f6c');
+  background-size: cover;
+  background-position: center;
+  margin: -30px 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: 3s;
+}
+
+.cuadro .imagen2{
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome2.jpg?alt=media&token=6943b372-ed60-431e-8a1b-299b0e1856e0');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -30px;
+  left: 570px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: 3s;
+}
+
+
+.cuadro .imagen .filtro,
+.cuadro .imagen2 .filtro{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 53, 97, 0.3);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.cuadro .informacion{
+  position: relative;
+  left: 400px;
+  top: -240px;
+  width: 500px;
+  height: 200px;
+  font-size: 1.3em;
+  color: #111814;
+  text-align: justify;
+}
+
+.cuadro .informacion2{
+  position: relative;
+  left: 40px;
+  top: -300px;
+  width: 500px;
+  height: 200px;
+  font-size: 1.3em;
+  color: #111814;
+  text-align: justify;
+}
+
+.cuadro .informacion h3,
+.cuadro .informacion2 h3{
+  font-weight: 600;
+  margin: 20px auto 10px 135px;
+  font-family: helvetica;
+}
+
+.cuadro .informacion h3:hover,
+.cuadro .informacion2 h3:hover{
+  text-decoration: underline;
+}
+
+.cuadro .informacion .resalte,
+.cuadro .informacion2 .resalte{font-weight: 600;}
+.cuadro .informacion .n1{color: #51B927;}
+.cuadro .informacion .n2{color: #EC7E09;}
+.cuadro .informacion .n3{color: #DA2F46;}
+.cuadro .informacion2 .n1{color: #51B927;}
+.cuadro .informacion2 .n2{color: #EC7E09;}
+.cuadro .informacion2 .n3{color: #DA2F46;}
+.cuadro .informacion .resalte:hover,
+.cuadro .informacion2 .resalte:hover{
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+.cuadro .informacion .boton{
+  position: relative;
+  font-weight: 500;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border: 2px #084887 solid;
+  left: 150px;
+  top: 0;
+  border-radius: 30px;
+  transition: 3s transform;
+}
+
+.cuadro .informacion2 .boton{
+  position: relative;
+  font-weight: 500;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border: 2px #084887 solid;
+  left: 50px;
+  top: 0;
+  border-radius: 30px;
+  transition: 3s transform;
+}
+
+.cuadro .informacion .boton:hover,
+.cuadro .informacion2 .boton:hover{
+  border: 2px #010B13 solid;
+  background-color: #010B13;
+  color: #F7F5FB;
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
+}
+
+.cuadro .informacion .boton:focus,
+.cuadro .informacion2 .boton:focus{
+  border: 2px #010B13 solid;
+  background-color: #010B13;
+  color: #F7F5FB;
+  border-radius: 0;
+}
+
+.cuadro:hover .imagen,
+.cuadro:hover .imagen2{
+  transform: scale(1.05, 1.05)
+    rotate(-6deg)
+    translate(10px, 10px);
+}
+
+.cuadro:hover .informacion .boton,
+.cuadro:hover .informacion2 .boton{
+  transform: scale(1.05, 1.05)
+    translate(-20px, 10px);
+}
+
+.cuadro:hover{
+  transform: translate(-5px, -15px);
+  transform-origin: 100% 0;
+}
+
+
+
+/*
+  Imagenes cursos recomendados
+*/
+
+.recomendaciones{
+  width: 925px;
+  height: 1200px;
+  margin: auto;
+}
+
+.recomendaciones .texto{
+  width: 700px;
+  margin: 0 auto 100px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+  color: #5D6C6F;
+}
+
+.recomendaciones .texto .seccionT{
+  display: block;
+  font-size: 1.9em;
+  line-height: 2.2;
+	font-family: 'Georgia';
+  color: #262322;
+  transition: 0.3s;
+}
+.recomendaciones .texto .seccionT:hover{transform: scale(1.02);}
+
+.recomendaciones .texto .resaltado{font-weight: 700;}
+.recomendaciones .texto .resaltado:hover{
+  outline: 3px solid;
+  outline-offset: 2px;
+}
+
+.recomendaciones .texto .t1{color: #E1BC29;}
+.recomendaciones .texto .t2{color: #FF8C42;}
+.recomendaciones .texto .t3{color: #61A0AF;}
+
+.recomendaciones .imagenes{
+  width: 100%;
+  height: 100%;
+}
+
+.recomendaciones .titulo{
+  position: relative;
+  display: none;
+  width: 50%;
+  left: 25%;
+  top: 20%;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.recomendaciones .descripcion{
+  position: relative;
+  display: none;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  outline: 2px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.recomendaciones .marco{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  top: -10%;
+  border: 3px solid;
+  border-radius: 10px;
+}
+
+.recomendaciones .imagen{
+  border-radius: 10px;
+}
+
+.recomendaciones .n1{
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome3.jpg?alt=media&token=fe2cf255-8074-42fb-ad3d-3eb7d93aee75');
+  color: #071E22;
+  transition: 1s;
+}
+
+.recomendaciones .n2{
+  position: relative;
+  left: 450px;
+  top: -160px;
+  width: 460px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome4.jpg?alt=media&token=c44c6179-fc97-40b2-88ff-510d9dbe78f8');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .n3{
+  position: relative;
+  left: 10px;
+  top: -280px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FHuerto.jpg?alt=media&token=40c670e8-7f05-4f5b-8506-7f258796f773');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .n4{
+  position: relative;
+  left: 420px;
+  top: -410px;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fhome5.jpg?alt=media&token=67f98888-11fd-417b-a69b-ca2cabd41a9a');
+  color: #071E22;
+  transition: 0.6s;
+}
+
+.recomendaciones .imagen:hover{
+  transform: scale(1.1);
+  cursor: url('https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FcursorHWT.cur?alt=media&token=7e77fa6c-8c00-49dc-8723-f225857c44f5'), pointer;
+  z-index: 100;
+}
+
+.recomendaciones .imagen:hover .titulo{display: block;}
+.recomendaciones .imagen:hover .descripcion{display: block;}
+.recomendaciones .imagen:hover .marco{display: none;}

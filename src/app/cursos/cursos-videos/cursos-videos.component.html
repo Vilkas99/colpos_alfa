@@ -1,0 +1,22 @@
+<video class="video" width="740" height="480" controls>
+    <source src="https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fexample.mp4?alt=media&token=158397ac-649e-41f5-87bc-8619378033f7" type="video/mp4">
+    Tu navegador no soporta HTML5.
+  </video>
+
+<ul class="cont-bar">
+    <li>
+        <a style="cursor: pointer;" (click)="show_acerca = true">Acerca del curso</a>
+    </li>
+    <li>
+        <a style="cursor: pointer;" (click)="show_acerca = false">Contenidos</a>
+    </li>
+</ul>
+<hr style="height: 2px; border: none; color: #333; background-color: #333; width: 60%;">
+
+<div class="content" *ngIf="show_acerca">
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</div>
+<div class="content" *ngIf="!show_acerca">
+    Agricultura
+</div>
