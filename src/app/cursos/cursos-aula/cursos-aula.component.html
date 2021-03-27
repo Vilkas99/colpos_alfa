@@ -1,3 +1,29 @@
-<li><a routerLink="/cursos/video">Video material 1</a></li>
-<li><a routerLink="/cursos/lectura">PDF material 2</a></li>
-<li><a routerLink="/cursos/evaluacion">Evaluacion material 2</a></li>
+
+<section id = "contenedorAula">
+    <div id = "imagenFondoCurso">
+        <h1 id = "textoTitulo"> GANADERÍA </h1>
+        <h3 id = "textoTitulo"> Curso 67 </h3>
+    </div>
+    <p style = "padding-top: 20px; text-align: justify; width: 920px;">
+        Descripción del curso : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum pellentesque orci, eget interdum eros facilisis eu. Fusce erat turpis, pharetra vel tellus sit amet, auctor finibus purus. Cras eget nibh vitae quam facilisis ultricies ac vel est. Aenean ut consectetur tellus. Praesent et ante a felis hendrerit bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus lectus, commodo non turpis eget, cursus pellentesque neque. Aliquam eget massa eu quam tristique malesuada in quis mi. Phasellus purus nisl, volutpat vitae sapien nec, sollicitudin consequat est. 
+    </p>
+    <h4 style = "margin: 20px;"> Contenidos </h4>
+    <div class = "col" style="width: 920px; flex-direction: column;">
+       <ul id = "contenidoDelCurso">
+            <!-- <li id = "logoVideo" >[Video]</li> -->
+            <li><img src="https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fboton-de-reproduccion-redonda.png?alt=media&token=2a0ff019-c732-4fe1-8979-44e41afd2ff1" style="width:40px;height:40px; padding: 5px"></li>
+            <li><a routerLink="/cursos/video">Video material 1</a></li>
+       </ul>
+       <ul id = "contenidoDelCurso">
+        <li><img src="https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2Fpdf_logo.png?alt=media&token=699aadc8-5722-434e-94a0-0072d0d8c2b7" style="width:40px;height:40px; padding: 5px"></li>
+            <li><a routerLink="/cursos/lectura">PDF material 2</a></li>
+       </ul>
+       <ul id = "contenidoDelCurso">
+        <li><img src="https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/cursos%2FlogoExamen.png?alt=media&token=0fc30254-8b55-4bc0-85b2-e6a9fa9eb86d" style="width:40px;height:40px; padding: 5px"></li>
+            <li><a routerLink="/cursos/evaluacion">Evaluacion material 2</a></li>
+       </ul>
+        
+        
+    </div>
+    
+</section>
