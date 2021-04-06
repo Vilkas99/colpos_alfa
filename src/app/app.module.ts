@@ -100,7 +100,7 @@ import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos
     ForoPostsComponent,
     ForoPostNuevoComponent,
     SecurityPerfilInformacionComponent,
-    SecurityPerfilEditarComponent
+    SecurityPerfilEditarComponent,
     CursosCategoriaComponent,
     CursosMostrarCategoriaComponent,
     CursosVideosComponent,
