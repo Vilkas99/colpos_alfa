@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home/home.component';
 import { HomeNavbarComponent } from './home/home-navbar/home-navbar.component';
@@ -46,11 +47,14 @@ import { ForoHomeComponent } from './foros/foro-home/foro-home.component';
 import { ForoCategoriasComponent } from './foros/foro-categorias/foro-categorias.component';
 import { ForoPostsComponent } from './foros/foro-posts/foro-posts.component';
 import { ForoPostNuevoComponent } from './foros/foro-post-nuevo/foro-post-nuevo.component';
+import { SecurityPerfilInformacionComponent } from './security/security-perfil-informacion/security-perfil-informacion.component';
+import { SecurityPerfilEditarComponent } from './security/security-perfil-editar/security-perfil-editar.component';
 import { CursosCategoriaComponent } from './cursos/cursos-categoria/cursos-categoria.component';
 import { CursosMostrarCategoriaComponent } from './cursos/cursos-mostrar-categoria/cursos-mostrar-categoria.component';
 import { CursosVideosComponent } from './cursos/cursos-videos/cursos-videos.component';
 import { CursosLecturasComponent } from './cursos/cursos-lecturas/cursos-lecturas.component';
 import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos-evaluaciones.component';
+
 
 @NgModule({
   declarations: [
@@ -95,6 +99,8 @@ import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos
     ForoCategoriasComponent,
     ForoPostsComponent,
     ForoPostNuevoComponent,
+    SecurityPerfilInformacionComponent,
+    SecurityPerfilEditarComponent,
     CursosCategoriaComponent,
     CursosMostrarCategoriaComponent,
     CursosVideosComponent,
@@ -103,7 +109,9 @@ import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,160 @@
-<p>security-nuevo works!</p>
+<form [formGroup]="registro" class="card vertical">
+    <h1 class="centered">Registro</h1>
+    <div class="row">
+        <div class="column">
+            <div class="vertical">
+                    <div class="card subcard vertical">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" formControlName="nombre">
+                        <small id="registroError"
+                            *ngIf="this.registro.controls['nombre'].invalid && this.registro.controls['nombre'].touched"
+                            class="registro-error">
+                            Nombre requerido
+                        </small>
+                    </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="vertical">
+                    <div class="card subcard vertical">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" formControlName="apellido">
+                        <small id="registroError"
+                            *ngIf="this.registro.controls['apellido'].invalid && this.registro.controls['apellido'].touched"
+                            class="registro-error">
+                            Apellido requerido
+                        </small>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="vertical">
+                    <div class="card subcard vertical">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" formControlName="fecha">
+                        <small id="registroError"
+                            *ngIf="this.registro.controls['fecha'].invalid && this.registro.controls['fecha'].touched"
+                            class="registro-error">
+                            Fecha requerida
+                        </small>
+                    </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="vertical">
+                    <div class="card subcard vertical">
+                        <label for="tipoUsuario">Tipo de usuario</label>
+                        <input list="tipoUsuario" name="tipoUsuario" formControlName="tipoUsuario">
+                        <datalist id="tipoUsuario">
+                            <option value="Básico"></option>
+                            <option value="Socio"></option>
+                            <option value="Premium"></option>
+                        </datalist>
+                        <small id="registroError"
+                            *ngIf="this.registro.controls['tipoUsuario'].invalid && this.registro.controls['tipoUsuario'].touched"
+                            class="registro-error">
+                            Tipo de usuario requerido
+                        </small>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="unicolumn">
+            <div class="vertical">
+                <div class="card subcard vertical">
+                    <label for="correo">Correo electr&oacute;nico</label>
+                    <input type="text" id="correo" name="correo" formControlName="correo">
+                    <small id="registroError"
+                        *ngIf="this.registro.controls['correo'].invalid && this.registro.controls['correo'].touched"
+                        class="registro-error">
+                        Correo requerido
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="unicolumn">
+            <div class="vertical">
+                <div class="card subcard vertical">
+                    <label for="direccion">Direcci&oacute;n</label>
+                        <div class="row">
+                            <div class="subColumn">
+                            <div class="vertical">
+                                    <label for="calle">Calle</label>
+                                    <input type="text" id="calle" name="calle" formControlName="calle">
+                                    <small id="registroError"
+                                        *ngIf="this.registro.controls['calle'].invalid && this.registro.controls['calle'].touched"
+                                        class="registro-error">
+                                        Calle requerida
+                                    </small>
+                            </div>
+                            </div>
+                            <div class="subColumn">
+                                <div class="vertical">
+                                    <label for="correo">Colonia</label>
+                                    <input type="text" id="colonia" name="colonia" formControlName="colonia">
+                                    <small id="registroError"
+                                        *ngIf="this.registro.controls['colonia'].invalid && this.registro.controls['colonia'].touched"
+                                        class="registro-error">
+                                        Colonia requerida
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="unicolumn">
+            <div class="vertical">
+                <div class="card subcard vertical">
+                    <label for="codpost">C&oacute;digo postal</label>
+                    <input type="text" id="codpost" name="codpost" formControlName="codpost">
+                    <small id="registroError"
+                        *ngIf="this.registro.controls['codpost'].invalid && this.registro.controls['codpost'].touched"
+                        class="registro-error">
+                        C&oacute;digo postal requerido
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="subColumnClose1">
+                <label class="switch">
+                    <input type="checkbox" unchecked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="subColumnClose2">
+                <a>Privacidad y uso</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="subColumnClose1">
+                <label class="switch">
+                    <input type="checkbox" unchecked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="subColumnClose2">
+                <a>Recibir anuncios</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="centered">
+            <button type="submit" (click)="sendRegistro()" [disabled]="this.registro.invalid" class="button">Iniciar sesi&oacute;n</button>
+        </div>
+    </div>
+</form>
+
+<a routerLink="/login/perfil"> perfil </a> 

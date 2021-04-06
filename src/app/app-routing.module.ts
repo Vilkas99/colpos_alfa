@@ -20,6 +20,9 @@ import { SecurityLoginComponent } from './security/security-login/security-login
 import { SecurityNuevoComponent } from './security/security-nuevo/security-nuevo.component';
 import { SecurityOlvidePassComponent } from './security/security-olvide-pass/security-olvide-pass.component';
 import { SecurityRecuperarPassComponent } from './security/security-recuperar-pass/security-recuperar-pass.component';
+import {SecurityPerfilEditarComponent } from './security/security-perfil-editar/security-perfil-editar.component';
+import {SecurityPerfilInformacionComponent } from './security/security-perfil-informacion/security-perfil-informacion.component'
+
 
 
 import { CursosAulaComponent } from './cursos/cursos-aula/cursos-aula.component';
@@ -130,6 +133,14 @@ const routes: Routes = [
   {
     path:'login',
     component:   SecurityLoginComponent
+  },
+  {
+    path:'login/perfil',
+    component:   SecurityPerfilInformacionComponent
+  },
+  {
+    path:'login/perfileditar',
+    component: SecurityPerfilEditarComponent
   },
   {
     path:'login/nuevo',
