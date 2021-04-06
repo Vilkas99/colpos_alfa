@@ -1,0 +1,22 @@
+body{
+    font-family: georgia, times, serif;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+.headerForosHome{
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.category{
+    background-color:rgb(187, 179, 179);
+}
