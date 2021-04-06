@@ -1,5 +1,43 @@
-<p>security-login works!</p>
+<form [formGroup]="login" class="card vertical">
+    <h1 class="centered">Login</h1>
+    <div class="row">
+        <div class="column">
+            <div class="vertical">
+                    <div class="card subcard vertical">
+                        <label for="correo">Correo electr&oacute;nico</label>
+                        <input type="text" id="correo" name="correo" formControlName="correo">
+                        <small id="loginError"
+                            *ngIf="this.login.controls['correo'].invalid && this.login.controls['correo'].touched"
+                            class="login-error">
+                            Correo requerido
+                        </small>
+                    </div>
+                <div>
+                    <div class="card subcard vertical">
+                        <label for="password">Contrase&ntilde;a</label>
+                        <input type="password" name="password" id="password" formControlName="password">
+                        <small id="loginError"
+                            *ngIf="this.login.controls['password'].invalid && this.login.controls['password'].touched"
+                            class="login-error">
+                            Contrase&ntilde;a inv&aacute;lida
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <a class="olvidar" routerLink="/login/olvidepass">¿Olvidaste tu contraseña?</a> 
+            <div class="righted"><button type="submit" (click)="sendLogin()" [disabled]="this.login.invalid" class="button">Iniciar sesi&oacute;n</button></div>
+        </div>
+        <div class="column">
+            <div class="centered">
+                <img src="https://www.diariomarca.com.mx/wp-content/uploads/2019/10/NOTA-2-CHICA.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="centered">
+            <a routerLink="/login/nuevo">¿No tienes cuenta? Regístrate</a> 
+        </div>
+    </div>
+</form>
 
-<a routerLink="/login/nuevo"> nuevo usuario </a> 
-<a routerLink="/login/olvidepass"> olvide pass </a> 
 <a routerLink="/login/perfil"> perfil </a> 
