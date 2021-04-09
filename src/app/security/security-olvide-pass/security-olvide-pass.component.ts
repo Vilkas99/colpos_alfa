@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-olvide-pass.component.css']
 })
 export class SecurityOlvidePassComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

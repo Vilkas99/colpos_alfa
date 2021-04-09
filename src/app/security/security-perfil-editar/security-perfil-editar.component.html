@@ -1,0 +1,38 @@
+<form [formGroup]="editarPerfil" class="card vertical">
+    <h1>Editar perfil</h1>
+    <div class="split">
+        <div class="column">
+            <div class="horizontal">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" formControlName="nombre">
+            </div>
+            <small id="crearError" *ngIf="this.editarPerfil.controls['nombre'].invalid && this.editarPerfil.controls['nombre'].touched" class="login-error">
+                    Nombre requerido
+            </small>
+
+            <div class="horizontal">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" formControlName="apellido" min="0">
+            </div>
+            <small id="crearError" *ngIf="this.editarPerfil.controls['apellido'].invalid && this.editarPerfil.controls['apellido'].touched" class="login-error">
+                    Apellido requerido
+            </small>
+        </div>
+        <div class="column">
+            <div class="horizontal">
+                <label for="direcc">Direcci&oacute;n</label>
+                <input type="text" id="direcc" formControlName="direcc">
+            </div>
+            <small id="crearError" *ngIf="this.editarPerfil.controls['direcc'].invalid && this.editarPerfil.controls['direcc'].touched" class="login-error">
+                Direcci&oacute;n requerido
+            </small>
+        </div>
+    </div>
+
+    <div class="centered">
+        <button type="submit" [disabled]="this.editarPerfil.invalid" (click)="editar()" class="with-margin">Editar</button>
+        <button (click)="cancelar()" class="outline with-margin">
+          Cancelar
+        </button>
+    </div>
+</form>

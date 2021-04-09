@@ -20,9 +20,17 @@ import { SecurityLoginComponent } from './security/security-login/security-login
 import { SecurityNuevoComponent } from './security/security-nuevo/security-nuevo.component';
 import { SecurityOlvidePassComponent } from './security/security-olvide-pass/security-olvide-pass.component';
 import { SecurityRecuperarPassComponent } from './security/security-recuperar-pass/security-recuperar-pass.component';
+import {SecurityPerfilEditarComponent } from './security/security-perfil-editar/security-perfil-editar.component';
+import {SecurityPerfilInformacionComponent } from './security/security-perfil-informacion/security-perfil-informacion.component'
+
 
 
 import { CursosAulaComponent } from './cursos/cursos-aula/cursos-aula.component';
+import { CursosCategoriaComponent } from './cursos/cursos-categoria/cursos-categoria.component';
+import { CursosMostrarCategoriaComponent } from './cursos/cursos-mostrar-categoria/cursos-mostrar-categoria.component';
+import { CursosVideosComponent } from './cursos/cursos-videos/cursos-videos.component';
+import { CursosLecturasComponent } from './cursos/cursos-lecturas/cursos-lecturas.component';
+import { CursosEvaluacionesComponent } from './cursos/cursos-evaluaciones/cursos-evaluaciones.component';
 
 import { EcommerceCategoriasComponent } from './ecommerce/ecommerce-categorias/ecommerce-categorias.component';
 import { EcommerceProductosComponent } from './ecommerce/ecommerce-productos/ecommerce-productos.component';
@@ -31,10 +39,10 @@ import { EcommerceDetalleProductoComponent } from './ecommerce/ecommerce-detalle
 const routes: Routes = [
   {
     path:'',
-    component: HomeGaleriaComponent
+    component: HomeCarruselComponent
 
   },
- 
+
   {
     path:'carrusel',
     component: HomeCarruselComponent
@@ -68,6 +76,26 @@ const routes: Routes = [
     component:   CursosAulaComponent
   },
   {
+    path:'cursos/categorias',
+    component:   CursosCategoriaComponent
+  },
+  {
+    path:'cursos/categoria',
+    component:   CursosMostrarCategoriaComponent
+  },
+  {
+    path:'cursos/video',
+    component:   CursosVideosComponent
+  },
+  {
+    path:'cursos/lectura',
+    component:   CursosLecturasComponent
+  },
+  {
+    path:'cursos/evaluacion',
+    component:   CursosEvaluacionesComponent
+  },
+  {
     path:'ecommerce/categorias',
     component:   EcommerceCategoriasComponent
   },
@@ -95,16 +123,24 @@ const routes: Routes = [
     path:'foros/post-nuevo',
     component:   ForoPostNuevoComponent
   },
- 
+
   {
     path:'login',
     component:   SecurityLoginComponent
-  } 
+  }
   ,
- 
+
   {
     path:'login',
     component:   SecurityLoginComponent
+  },
+  {
+    path:'login/perfil',
+    component:   SecurityPerfilInformacionComponent
+  },
+  {
+    path:'login/perfileditar',
+    component: SecurityPerfilEditarComponent
   },
   {
     path:'login/nuevo',
